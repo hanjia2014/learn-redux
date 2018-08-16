@@ -3,9 +3,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { PersonDiv } from "./Person";
+import { Provider } from "react-redux";
 
 ReactDOM.render(
-    <PersonDiv>
-    </PersonDiv>,
+    <Provider store={null}>
+        <PersonDiv>
+        </PersonDiv>
+    </Provider>,
     document.getElementById("root")
 );
