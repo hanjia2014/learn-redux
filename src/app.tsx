@@ -4,9 +4,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { PersonDiv } from "./Person";
 import { Provider } from "react-redux";
+import store from './store';
 
 ReactDOM.render(
-    <Provider store={null}>
+    <Provider store={store}>
         <PersonDiv>
         </PersonDiv>
     </Provider>,
