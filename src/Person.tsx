@@ -13,7 +13,7 @@ export class PersonDiv extends React.Component<any, { users: Array<User>, showSp
     }
 
     componentDidMount() {
-        //this.getData();
+        
     }
 
     render() {
