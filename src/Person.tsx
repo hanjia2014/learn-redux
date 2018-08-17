@@ -3,7 +3,7 @@ import { User } from "./models/User";
 import { ClipLoader } from 'react-spinners';
 import axios from 'axios'
 
-export class PersonDiv extends React.Component<any, { users: Array<User>, showSpinner: boolean }> {
+export default class PersonDiv extends React.Component<any, { users: Array<User>, showSpinner: boolean }> {
     private Users: User[];
     private userView: Array<JSX.Element>;
 
