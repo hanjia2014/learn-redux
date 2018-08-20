@@ -3,13 +3,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import PersonDiv from "./Person";
+import Users from './containers/Users'
 import { Provider } from "react-redux";
 import store from './store';
 
 ReactDOM.render(
     <Provider store={store}>
-        <PersonDiv>
-        </PersonDiv>
+        <Users />
     </Provider>,
     document.getElementById("root")
 );
