@@ -14,8 +14,8 @@ export function reducer(state: State = initialState, action: Action) {
         case ActionTypes.ADD_USER : {
             const user = action.playload.user;
             return {
-                state,
-                users: [state.users, user]
+                ...state,
+                users: [...state.users, user]
             }
         }
 

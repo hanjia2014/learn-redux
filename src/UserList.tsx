@@ -1,5 +1,4 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { User } from './models/User';
 
 interface Props {
@@ -17,11 +16,13 @@ export default class UserList extends React.Component<Props, State> {
         return <div>
             <ul>
                 {
-                    users.map(user => {
-                        <li key={user.id}>
+                    users.map(user => (
+                        <li
+                            key={user.id}
+                        >
                             {user.username}
-                        </li>
-                    })
+                        </li>)
+                    )
                 }
             </ul>
         </div>;
